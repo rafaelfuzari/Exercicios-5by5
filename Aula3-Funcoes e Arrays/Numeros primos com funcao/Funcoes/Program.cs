@@ -1,4 +1,4 @@
-﻿int numero;
+﻿
 bool EPrimo(int numero)
 {
     int divisores = 0;
@@ -14,13 +14,20 @@ bool EPrimo(int numero)
         return false;
     else return true;
 }
-numero = int.Parse(Console.ReadLine());
 
-if (numero > 2)
+void ExibirPrimos()
 {
-    for (int i = 2; i <= numero; i++)
+    Console.Write("Insira um numero primo: ");
+    int numero = int.Parse(Console.ReadLine());
+
+    if (numero > 2)
     {
-        if (EPrimo(i)) Console.WriteLine($"O {i} é primo");
-        else Console.WriteLine($"O {i} não é primo");
+        for (int i = 2; i <= numero; i++)
+        {
+            if (EPrimo(i)) Console.WriteLine($"O {i} é primo");
+            else Console.WriteLine($"O {i} não é primo");
+        }
     }
 }
+
+ExibirPrimos();
