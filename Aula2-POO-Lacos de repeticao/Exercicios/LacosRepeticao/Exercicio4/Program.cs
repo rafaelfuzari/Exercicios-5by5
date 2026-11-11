@@ -14,5 +14,7 @@ for (int i = 2; i <= numero; i++)
         if ((i % j == 0) && (j != i)) divisores--;
         j++;
     };
+    
     if (divisores == 2) Console.WriteLine($"{i} é um numero primo");
+    if (divisores < 2) Console.WriteLine($"{i} não é um numero primo");
 }
