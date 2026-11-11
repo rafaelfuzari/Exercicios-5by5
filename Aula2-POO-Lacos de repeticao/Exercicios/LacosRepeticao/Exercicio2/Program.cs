@@ -13,7 +13,7 @@ if (numero > 0)
 {
     fib++;
     Console.WriteLine($"O numero da sequência fibonacci é: {fib}");
-    for (int i = 0; i <= numero; i++)
+    for (int i = 0; i < numero - 2; i++)
     {
         Console.WriteLine($"O numero da sequência fibonacci é: {fib}");
         fib += fib;
