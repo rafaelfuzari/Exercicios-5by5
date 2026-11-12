@@ -7,9 +7,13 @@ int linha;
 linha = 3;
 coluna = 5;
 
-int[,] PopularMatriz()
+int[,] matriz = new int[linha, coluna];
+int[,] matrizEspelhada = new int[linha, coluna];
+
+int[,] PopularMatriz(int[,] matriz)
 {
-    int[,] matriz = new int[linha, coluna];
+    
+    
 
     for (int i = 0; i < linha; i++)
     {
@@ -19,9 +23,27 @@ int[,] PopularMatriz()
         }
     }
 
+    
+
+
     return matriz;
 }
 
+
+int[,] InverterMatriz(int[,] matriz)
+{
+
+
+    for (int i = 0; i < linha; i++)
+    {
+
+        for (int j = 0; j < coluna; j++)
+        {
+            matrizEspelhada[i, j] = matriz[linha - i - 1, coluna - j - 1];
+        }
+    }
+    return matrizEspelhada;
+}
 void ImprimirMatriz(int[,] matriz)
 {
 
@@ -45,6 +67,12 @@ void ImprimirMatriz(int[,] matriz)
             Console.Write($"[{matrizInversa[i, j]}] ");
         }
     }
+    
+    
 }
+PopularMatriz(matriz);
+InverterMatriz(matriz);
 
-ImprimirMatriz(PopularMatriz());
+ImprimirMatriz(matriz);
+Console.WriteLine("\n------------------------------------------------------");
+ImprimirMatriz(matrizEspelhada);
