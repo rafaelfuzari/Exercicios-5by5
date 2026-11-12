@@ -12,9 +12,6 @@ int[,] matrizEspelhada = new int[linha, coluna];
 
 int[,] PopularMatriz(int[,] matriz)
 {
-    
-    
-
     for (int i = 0; i < linha; i++)
     {
         for (int j = 0; j < coluna; j++)
@@ -22,18 +19,12 @@ int[,] PopularMatriz(int[,] matriz)
             matriz[i, j] = RandomNumberGenerator.GetInt32(1, 9);
         }
     }
-
-    
-
-
     return matriz;
 }
 
 
 int[,] InverterMatriz(int[,] matriz)
 {
-
-
     for (int i = 0; i < linha; i++)
     {
 
@@ -55,6 +46,7 @@ void ImprimirMatriz(int[,] matriz)
             Console.Write($"[{matriz[i, j]}] ");
         }
     }
+
     int[,] matrizInversa = new int [coluna, linha];
     Console.WriteLine();
 
@@ -74,5 +66,5 @@ PopularMatriz(matriz);
 InverterMatriz(matriz);
 
 ImprimirMatriz(matriz);
-Console.WriteLine("\n------------------------------------------------------");
+Console.WriteLine("\n\n------------------------------------------------------");
 ImprimirMatriz(matrizEspelhada);
