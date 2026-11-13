@@ -59,6 +59,7 @@ void ImprimirBoletim()
 {
     Console.WriteLine("-------Imprimindo boleto----------");
     Console.WriteLine("As 4 primeiras notas são as notas do bimestre. A 5ª nota é a média do ano");
+    Console.WriteLine("\n\n\nMatérias \t N1 \t N2 \t N3 \t N4 \t M \t Sit.");
     for (int i = 0; i < 7; i++)
     {
         Console.Write($"{dadosTexto[i, 0]}\t");
