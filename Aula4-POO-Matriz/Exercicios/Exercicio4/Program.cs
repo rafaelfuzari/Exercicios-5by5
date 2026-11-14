@@ -1,4 +1,4 @@
-﻿string[,] dadosTexto = new string[7, 2]; //"Português""Matemática","Ciências","Geografia","História","Artes","Educação Fisica" };
+﻿string[,] dadosTexto = new string[7, 2]; 
 float[,] notas = new float[7, 5];
 
 void PopularMatrizMaterias()
@@ -78,3 +78,4 @@ PopularNotas();
 CalcularMedias();
 CalcularAprovacao();
 ImprimirBoletim();
+
