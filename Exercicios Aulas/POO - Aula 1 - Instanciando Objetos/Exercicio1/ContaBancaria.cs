@@ -11,11 +11,11 @@
 
     public void Depositar(double valor)
     {
-        Saldo += valor;
+        Saldo += Math.Abs(valor);
     }
     public void Sacar(double valor)
     {
-        if (Saldo - valor > 0) Saldo -= valor;
+        if (Saldo - valor > 0) Saldo -= Math.Abs(valor);
         else Console.WriteLine("Saldo insuficiente para esse saque");
     }
     public void ExibirSaldo()

@@ -3,7 +3,7 @@
 p1.ExibirSaldo();
 p1.Depositar(1500);
 p1.ExibirSaldo();
-p1.Sacar(17000);
+p1.Sacar(-17000);
 p1.ExibirSaldo();
 p1.Sacar(8000);
 
