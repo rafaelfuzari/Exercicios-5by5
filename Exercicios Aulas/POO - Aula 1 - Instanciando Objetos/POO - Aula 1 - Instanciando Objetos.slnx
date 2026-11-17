@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Exercicio1/Exercicio1.csproj" Id="d8f32233-24c8-45e0-934f-762d66259cd8" />
+  <Project Path="Exercicio2/Exercicio2.csproj" Id="769a146b-26c1-491b-8ca7-099127dff172" />
   <Project Path="InstanciandoObjetos/InstanciandoObjetos.csproj" />
 </Solution>
