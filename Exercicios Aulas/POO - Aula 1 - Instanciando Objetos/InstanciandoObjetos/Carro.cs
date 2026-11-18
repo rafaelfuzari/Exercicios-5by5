@@ -26,4 +26,11 @@
         
 }
 
+public static class Teste
+    {
+    public static void teste()
+    {
+        Console.WriteLine("teste");
+    }
+    }
 

@@ -11,5 +11,3 @@ for (int i = 0; i < cArray.Length; i++)
     Console.WriteLine(cArray[i]);
 }
 
-
-
